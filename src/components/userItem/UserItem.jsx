@@ -6,7 +6,7 @@ const UserItem = ({ user }) => {
       <div className="flex items-center gap-3">
         <img
           className="rounded-full h-9 w-9"
-          src={user.photo}
+          src={user.image}
           alt={user.name}
         />
         <span className="text-sm">{user.name}</span>

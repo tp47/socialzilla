@@ -1,5 +1,5 @@
 const Profile = () => {
-  return null
-}
+  return null;
+};
 
-export default Profile
+export default Profile;

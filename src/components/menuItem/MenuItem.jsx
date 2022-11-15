@@ -1,10 +1,11 @@
-const MenuItem = ({ icon, text }) => {
+const MenuItem = ({ icon, text, children }) => {
   return (
     <li className="flex flex-row items-center justify-start gap-2">
       {icon}
-      <span>{text}</span>
+      {text && <span>{text}</span>}
+      {children}
     </li>
-  )
-}
+  );
+};
 
-export default MenuItem
+export default MenuItem;
