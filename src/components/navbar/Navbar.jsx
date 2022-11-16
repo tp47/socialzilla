@@ -3,6 +3,7 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
+import SearchIcon from "@mui/icons-material/Search";
 
 import MenuItem from "../menuItem/MenuItem";
 import Menu from "../menu/Menu";
@@ -21,6 +22,14 @@ const Navbar = () => {
         <Menu direction="row">
           <MenuItem icon={<HomeOutlinedIcon />} />
           <MenuItem icon={<DarkModeOutlinedIcon />} />
+          <MenuItem>
+            <span className="flex flex-row items-center border-gray-400 border rounded-full overflow-hidden pr-1">
+              <input className="px-3 py-1" type="text" placeholder="Search..."/>
+              <button>
+                <SearchIcon />
+              </button>
+            </span>
+          </MenuItem>
         </Menu>
       </div>
 
