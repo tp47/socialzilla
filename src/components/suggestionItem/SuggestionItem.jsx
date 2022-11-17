@@ -1,16 +1,20 @@
+import AddIcon from "@mui/icons-material/Add";
+import ClearOutlinedIcon from "@mui/icons-material/ClearOutlined";
+
 import UserItem from "../userItem/UserItem";
 
-const SuggestionItem = () => {
+const SuggestionItem = ({ user }) => {
   return (
-    <div>
-      <UserItem
-        user={{
-          name: "Иван Васильевич",
-          url: "/",
-          photo:
-            "https://yt3.ggpht.com/ytc/AMLnZu9U1YR60O4hjCfJHtYSjlpRNJx07bOADEDb6X-d=s48-c-k-c0x00ffffff-no-rj",
-        }}
-      />
+    <div className="flex flex-row items-center justify-between">
+      <UserItem user={user} />
+      <div>
+        <button className="text-sm bg-green-300 rounded-full px-2">
+          <AddIcon />
+        </button>
+        <button className="text-sm bg-red-300 rounded-full px-2 ml-2">
+          <ClearOutlinedIcon />
+        </button>
+      </div>
     </div>
   );
 };

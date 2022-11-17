@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row justify-between items-center border-b h-16">
+    <nav className="flex flex-row justify-between items-center border-b h-16 bg-white">
       <div className="flex flex-row items-center justify-start">
         <Link to="/">
           <h2 className="font-semibold text-xl text-sky-900 mx-3">

@@ -7,10 +7,10 @@ import Rightbar from '../rightbar/Rightbar';
 const Layout = () => {
   return (
     <>
-      <header>
+      <header className="sticky top-0">
         <Navbar />
       </header>
-      <main>
+      <main className="flex flex-row">
         <Leftbar />
         <Outlet />
         <Rightbar />

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-const UserItem = ({ user }) => {
+const UserItem = ({ user, isOnline }) => {
   return (
     <Link to={user.url}>
-      <div className="flex items-center gap-3">
+      <div className={`flex items-center gap-3 ${isOnline ? "relative before:block before:content-[''] before:w-3 before:h-3 before:rounded-full before:bg-green-500 before:absolute before:left-6 before:top-6" : ""}`}>
         <img
-          className="rounded-full h-9 w-9"
+          className="rounded-full h-9 w-"
           src={user.image}
           alt={user.name}
         />
