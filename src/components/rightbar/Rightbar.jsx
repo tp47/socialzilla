@@ -5,8 +5,8 @@ import UserItem from "../userItem/UserItem";
 
 const Rightbar = () => {
   return (
-    <section className="w-2/6 flex flex-col sticky top-16 gap-4 overflow-scroll">
-      <ListCard heading="Suggestions">
+    <section className="w-2/6 flex flex-col sticky top-16 h-[calc(100vh-64px)] gap-4 overflow-scroll p-3">
+      <ListCard heading="Рекомендации">
         <SuggestionItem
           user={{
             name: "Иван Васильевич",
@@ -16,7 +16,7 @@ const Rightbar = () => {
           }}
         />
       </ListCard>
-      <ListCard heading="Latest activities">
+      <ListCard heading="Действия друзей">
         <ActivitiesItem 
           user={{
             name: "Иван Васильевич",
