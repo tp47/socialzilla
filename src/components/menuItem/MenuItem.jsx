@@ -1,8 +1,10 @@
-const MenuItem = ({ icon, text, children }) => {
+const MenuItem = ({ icon, text, onClick, children }) => {
   return (
-    <li className="flex flex-row items-center justify-start gap-2">
-      {icon}
-      {text && <span className="text-sm">{text}</span>}
+    <li className="flex flex-row items-center justify-start dark:text-white">
+      <button onClick={onClick}>
+        {icon}
+        {text && <span className="text-sm ml-3">{text}</span>}
+      </button>
       {children}
     </li>
   );

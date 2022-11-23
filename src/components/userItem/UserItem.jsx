@@ -5,11 +5,11 @@ const UserItem = ({ user, isOnline }) => {
     <Link to={user.url}>
       <div className={`flex items-center gap-3 ${isOnline ? "relative before:block before:content-[''] before:w-3 before:h-3 before:rounded-full before:bg-green-500 before:absolute before:left-6 before:top-6" : ""}`}>
         <img
-          className="rounded-full h-9 w-"
+          className="rounded-full h-9 w-9"
           src={user.image}
           alt={user.name}
         />
-        <span className="text-sm">{user.name}</span>
+        <span className="text-sm dark:text-white">{user.name}</span>
       </div>
     </Link>
   );

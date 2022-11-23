@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div>
+    <div className="w-3/6 bg-neutral-100 dark:bg-neutral-700">
       <h1>13</h1>
       <h1>13</h1>
       <h1>13</h1>

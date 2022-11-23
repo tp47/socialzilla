@@ -1,8 +1,14 @@
+import { memo } from "react";
+
 const Menu = ({ heading, separator, children, direction }) => {
   return (
     <>
       {separator && <hr className="w-4/6 m-auto" />}
-      <ul className={`flex flex-${direction === 'row' ? 'row gap-6' : 'col gap-3'} p-3`}>
+      <ul
+        className={`flex flex-${
+          direction === "row" ? "row gap-6" : "col gap-3"
+        } p-3`}
+      >
         {heading && <h4>{heading}</h4>}
         {children}
       </ul>
@@ -10,4 +16,4 @@ const Menu = ({ heading, separator, children, direction }) => {
   );
 };
 
-export default Menu;
+export default memo(Menu);

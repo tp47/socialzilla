@@ -1,3 +1,4 @@
+import { memo } from "react";
 import ActivitiesItem from "../activitiesItem/ActivitiesItem";
 import ListCard from "../listCard/ListCard";
 import SuggestionItem from "../suggestionItem/SuggestionItem";
@@ -5,7 +6,7 @@ import UserItem from "../userItem/UserItem";
 
 const Rightbar = () => {
   return (
-    <section className="w-2/6 flex flex-col sticky top-16 h-[calc(100vh-64px)] gap-4 overflow-scroll p-3">
+    <section className="w-2/6 flex flex-col sticky top-16 h-[calc(100vh-64px)] gap-4 overflow-scroll p-3 bg-neutral-100 dark:bg-neutral-700">
       <ListCard heading="Рекомендации">
         <SuggestionItem
           user={{
@@ -17,7 +18,7 @@ const Rightbar = () => {
         />
       </ListCard>
       <ListCard heading="Действия друзей">
-        <ActivitiesItem 
+        <ActivitiesItem
           user={{
             name: "Иван Васильевич",
             url: "/",
@@ -29,7 +30,7 @@ const Rightbar = () => {
         />
       </ListCard>
       <ListCard heading="Друзья онлайн">
-        <UserItem 
+        <UserItem
           user={{
             name: "Иван Васильевич",
             url: "/",
@@ -43,4 +44,4 @@ const Rightbar = () => {
   );
 };
 
-export default Rightbar;
+export default memo(Rightbar);

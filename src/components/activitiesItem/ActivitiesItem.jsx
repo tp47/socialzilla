@@ -5,9 +5,9 @@ const ActivitiesItem = ({ user, activity, time }) => {
     <div className="flex flex-row items-center justify-between">
       <div className="flex flex-row items-center">
         <UserItem user={user} />
-        {activity && <span className="text-sm ml-1">{activity}</span>}
+        {activity && <span className="text-sm ml-1 dark:text-white">{activity}</span>}
       </div>
-      {time && <span className="text-sm">{time}</span>}
+      {time && <span className="text-sm dark:text-white">{time}</span>}
     </div>
   );
 };
