@@ -9,7 +9,7 @@ const UserItem = ({ user, isOnline }) => {
           src={user.image}
           alt={user.name}
         />
-        <span className="text-sm dark:text-white font-bold">{user.name}</span>
+        {user.name && <span className="text-sm dark:text-white font-bold">{user.name}</span>}
       </div>
     </Link>
   );

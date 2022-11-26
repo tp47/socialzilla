@@ -33,11 +33,37 @@ const Home = () => {
         image:
           "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
       },
+      comments: [
+        {
+          id: 1,
+          userId: 1,
+          text: "Lorem repellendus in fugit accusamus molestias. Veniam alias cumque voluptate!",
+          time: "a minute ago",
+          user: {
+            id: 1,
+            name: "John Doe",
+            image:
+              "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          },
+        },
+        {
+          id: 2,
+          userId: 1,
+          text: "Lorem repellendus in fugit accusamus molestias. Veniam alias cumque voluptate!",
+          user: {
+            id: 1,
+            name: "John Doe",
+            image:
+              "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          },
+        },
+      ],
     },
     {
       id: 2,
       userId: 2,
-      description: "Tenetur iste voluptates dolorem rem commodi voluptate pariatur, voluptatum, laboriosam consequatur enim nostrum cumque! Maiores a nam non adipisci minima modi tempore.",
+      description:
+        "Tenetur iste voluptates dolorem rem commodi voluptate pariatur, voluptatum, laboriosam consequatur enim nostrum cumque! Maiores a nam non adipisci minima modi tempore.",
       time: "a few seconds ago",
       user: {
         id: 2,
