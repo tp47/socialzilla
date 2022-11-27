@@ -3,7 +3,7 @@ const MenuItem = ({ icon, text, onClick, children }) => {
     <li className="flex flex-row items-center justify-start dark:text-white">
       <button onClick={onClick}>
         {icon}
-        {text && <span className="text-sm ml-3">{text}</span>}
+        {text && <span className="hidden ml-3 text-sm sm:block">{text}</span>}
       </button>
       {children}
     </li>

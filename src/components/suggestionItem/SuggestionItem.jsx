@@ -1,20 +1,15 @@
 import AddIcon from "@mui/icons-material/Add";
-import ClearOutlinedIcon from "@mui/icons-material/ClearOutlined";
 
 import UserItem from "../userItem/UserItem";
 
 const SuggestionItem = ({ user }) => {
   return (
-    <div className="flex flex-row items-center justify-between">
+    <div className="flex flex-col items-start justify-between">
       <UserItem user={user} />
-      <div>
-        <button className="text-sm bg-green-300 rounded-full px-2">
-          <AddIcon />
+        <button className="flex items-center ml-12 text-xs bg-primary-button px-1 text-white">
+          <AddIcon fontSize="small" />
+          <span>Подписатсья</span>
         </button>
-        <button className="text-sm bg-red-300 rounded-full px-2 ml-2">
-          <ClearOutlinedIcon />
-        </button>
-      </div>
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Navbar = () => {
   const { toggleDarkMode, isDarkMode } = useContext(DarkModeContext);
 
   return (
-    <nav className="flex flex-row justify-between items-center border-b dark:border-neutral-500 h-16 bg-white dark:bg-neutral-900">
+    <nav className="flex flex-row justify-between items-center border-b dark:border-neutral-500 h-12 sm:h-16 bg-white dark:bg-primary-bg-dark">
       <div className="flex flex-row items-center justify-start">
         <Link to="/">
           <h2 className="font-semibold text-xl text-sky-900 mx-3 dark:text-white">
@@ -28,9 +28,9 @@ const Navbar = () => {
           <MenuItem icon={<HomeOutlinedIcon />} />
           <MenuItem icon={isDarkMode ? <LightModeOutlinedIcon /> : <DarkModeOutlinedIcon />} onClick={toggleDarkMode} />
           <MenuItem>
-            <span className="flex flex-row items-center border-gray-400 border rounded-full overflow-hidden pr-1">
+            <span className="hidden sm:flex flex-row items-center border-gray-400 border rounded-full overflow-hidden pr-1">
               <input
-                className="px-3 py-1 dark:text-neutral-300 dark:bg-neutral-900"
+                className="px-3 py-1 dark:text-neutral-300 dark:bg-primary-bg-dark"
                 type="text"
                 placeholder="Search..."
               />
@@ -42,7 +42,7 @@ const Navbar = () => {
         </Menu>
       </div>
 
-      <div className="flex flex-row items-center justify-end">
+      <div className="hidden sm:flex flex-row items-center justify-end">
         <Menu direction="row">
           <MenuItem icon={<PersonOutlinedIcon />} />
           <MenuItem icon={<EmailOutlinedIcon />} />

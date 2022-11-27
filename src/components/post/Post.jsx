@@ -13,7 +13,7 @@ const Post = ({ post }) => {
   const [isCommentOpen, setIsCommentOpen] = useState(false);
 
   return (
-    <article className="w-full rounded-xl bg-white dark:bg-neutral-900 p-3 flex flex-col gap-3 shadow-md dark:shadow-none">
+    <article className="flex flex-col w-full p-3 bg-white shadow-md sm:rounded-xl dark:bg-primary-bg-dark gap-3 dark:shadow-none">
       <div className="flex flex-row items-center justify-between">
         <ActivitiesItem user={post.user} time={post.time} />
         <MenuItem icon={<MoreHorizIcon />} />

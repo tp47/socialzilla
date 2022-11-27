@@ -6,7 +6,7 @@ import UserItem from "../userItem/UserItem";
 
 const Rightbar = () => {
   return (
-    <section className="w-2/6 flex flex-col sticky top-16 h-[calc(100vh-64px)] gap-4 overflow-scroll p-3 bg-neutral-100 dark:bg-neutral-700">
+    <section className="w-2/6 hidden sm:flex flex-col sticky top-16 h-[calc(100vh-64px)] gap-4 overflow-scroll p-3 bg-neutral-100 dark:bg-secondary-bg-dark">
       <ListCard heading="Рекомендации">
         <SuggestionItem
           user={{

@@ -10,7 +10,7 @@ import MenuItem from "../menuItem/MenuItem";
 
 const Leftbar = () => {
   return (
-    <section className="flex flex-col flex-initial w-1/6 sticky top-16 h-[calc(100vh-64px)] dark:bg-neutral-900">
+    <section className="hidden sm:flex flex-col flex-initial w-1/6 sticky top-16 h-[calc(100vh-64px)] dark:bg-neutral-900">
       <Menu>
         <MenuItem icon={<PersonOutlinedIcon />} text="Моя страница" />
         <MenuItem icon={<ChatOutlinedIcon />} text="Сообщения" />

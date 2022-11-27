@@ -14,7 +14,7 @@ const Layout = () => {
       <header className="sticky top-0 z-10">
         <Navbar />
       </header>
-      <main className="flex flex-row justify-between">
+      <main className="flex flex-col sm:flex-row sm:justify-between">
         <Leftbar />
         <Outlet />
         <Rightbar />

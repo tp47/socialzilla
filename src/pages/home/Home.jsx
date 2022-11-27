@@ -74,7 +74,7 @@ const Home = () => {
     },
   ];
   return (
-    <section className="w-3/6 bg-neutral-100 dark:bg-neutral-700 flex flex-col p-3 gap-3">
+    <section className="w-full sm:w-3/6 bg-secondary-bg-light dark:bg-secondary-bg-dark flex flex-col sm:p-3 gap-3">
       <Stories stories={stories} />
       <Posts posts={posts} />
     </section>
