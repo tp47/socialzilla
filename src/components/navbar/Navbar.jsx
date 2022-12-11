@@ -7,6 +7,7 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { memo } from "react";
 
 import MenuItem from "../menuItem/MenuItem";
 import Menu from "../menu/Menu";
@@ -71,4 +72,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default memo(Navbar);
