@@ -1,13 +1,13 @@
-import {useContext} from "react";
+import { useContext } from "react";
 import { Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-import Navbar from '../navbar/Navbar';
-import Leftbar from '../leftbar/Leftbar';
-import Rightbar from '../rightbar/Rightbar';
-import {DarkModeContext} from "../../context/darkModeContext";
+import Navbar from "../navbar/Navbar";
+import Leftbar from "../leftbar/Leftbar";
+import Rightbar from "../rightbar/Rightbar";
 
 const Layout = () => {
-  const {isDarkMode} = useContext(DarkModeContext);
+  const { isDarkMode } = useSelector((state) => state.darkMode);
 
   return (
     <div className={isDarkMode ? "dark" : ""}>

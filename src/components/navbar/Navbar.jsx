@@ -1,20 +1,21 @@
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useSelector } from "react-redux";
 
 import MenuItem from "../menuItem/MenuItem";
 import Menu from "../menu/Menu";
 import UserItem from "../userItem/UserItem";
-import { DarkModeContext } from "../../context/darkModeContext";
+import { useActions } from "../../hooks/actions/actions";
 
 const Navbar = () => {
-  const { toggleDarkMode, isDarkMode } = useContext(DarkModeContext);
+  const { toggleDarkMode } = useActions();
+  const { isDarkMode } = useSelector((state) => state.darkMode);
 
   return (
     <nav className="flex flex-row justify-between items-center border-b dark:border-neutral-500 h-12 sm:h-16 bg-white dark:bg-primary-bg-dark">
@@ -26,7 +27,14 @@ const Navbar = () => {
         </Link>
         <Menu direction="row">
           <MenuItem icon={<HomeOutlinedIcon />} />
-          <MenuItem icon={isDarkMode ? <LightModeOutlinedIcon /> : <DarkModeOutlinedIcon />} onClick={toggleDarkMode} />
+          <MenuItem
+            icon={
+              isDarkMode ? <LightModeOutlinedIcon /> : <DarkModeOutlinedIcon />
+            }
+            onClick={() => {
+              toggleDarkMode();
+            }}
+          />
           <MenuItem>
             <span className="hidden sm:flex flex-row items-center border-gray-400 border rounded-full overflow-hidden pr-1">
               <input

@@ -21,7 +21,7 @@ function Login() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center flex-1 order-first p-10 sm:order-none gap-4">
+        <div className="flex flex-col justify-center flex-1 order-first p-10 gap-4">
           <h1 className="text-xl font-bold text-gray-500">Авторизация</h1>
           <form className="flex flex-col gap-7" action="">
             <input

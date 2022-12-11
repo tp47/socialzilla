@@ -4,16 +4,19 @@ import Stories from "../../components/stories/Stories";
 const Home = () => {
   const stories = [
     {
+      id: 1,
       image:
         "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinyrgb&w=1600",
       userName: "Johnasdf Doeasdfasdfa",
     },
     {
+      id: 2,
       image:
         "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinyrgb&w=1600",
       userName: "John Doe",
     },
     {
+      id: 3,
       image:
         "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinyrgb&w=1600",
       userName: "John Doe",

@@ -15,7 +15,7 @@ const Stories = ({ stories }) => {
         </span>
       </div>
       {stories.map((story) => (
-        <Story story={story} />
+        <Story key={story.id} story={story} />
       ))}
     </section>
   );
