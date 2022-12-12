@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import LoginForm from "../../components/loginForm/LoginForm";
 
 function Login() {
   return (
@@ -21,23 +22,9 @@ function Login() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center flex-1 order-first p-10 gap-4">
+        <div className="flex flex-col justify-center flex-1 order-first p-10 gap-4 overflow-y-auto">
           <h1 className="text-xl font-bold text-gray-500">Авторизация</h1>
-          <form className="flex flex-col gap-7" action="">
-            <input
-              className="px-3 py-3 border-b-2 border-b-gray-300"
-              type="text"
-              placeholder="Имя пользователя"
-            />
-            <input
-              className="px-3 py-3 border-b-2 border-b-gray-300"
-              type="password"
-              placeholder="Пароль"
-            />
-            <button className="w-1/2 p-3 text-white bg-purple-600 border-none cursor-pointer">
-              Авторизоваться
-            </button>
-          </form>
+          <LoginForm />
         </div>
       </div>
     </div>
