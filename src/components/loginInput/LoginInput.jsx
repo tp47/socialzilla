@@ -20,6 +20,7 @@ LoginInput.propTypes = {
 LoginInput.defaultProps = {
   placeholder: "",
   type: "text",
+  register: {},
 };
 
 export default LoginInput;
