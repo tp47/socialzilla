@@ -32,7 +32,7 @@ const Home = () => {
         "https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600",
       user: {
         id: 1,
-        name: "John Doe",
+        name: "John Hoe",
         image:
           "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
       },
