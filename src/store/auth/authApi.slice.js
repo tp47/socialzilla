@@ -11,3 +11,5 @@ const authApiSlice = apiSlice.injectEndpoints({
     }),
   }),
 });
+
+export { authApiSlice };
